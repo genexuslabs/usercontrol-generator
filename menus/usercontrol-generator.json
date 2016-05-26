@@ -7,7 +7,7 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Genexus",
+          "label": "GeneXus",
           "submenu": [
             {
               "label": "Create User Control",

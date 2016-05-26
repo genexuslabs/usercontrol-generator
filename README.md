@@ -2,17 +2,17 @@
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
-Genexus Usercontrol Generator is an Atom package designed to help us with the Usercontrol edition.
+Genexus UserControl Generator is an Atom package that helps to create [User Controls](http://wiki.genexus.com/commwiki/servlet/wiki?5273,Category%3AUser+Controls) for GeneXus.
 
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable behavior to (mail a definir).
+By participating, you are expected to uphold this code. Please report unacceptable behavior to jdiana@genexus.com.
 
 ## Installing
 
 ### Prerequisites
 - [Atom](https://atom.io/)
 
-## Licence
+## License
 
 Copyright (c) 2016 Genexus
 
