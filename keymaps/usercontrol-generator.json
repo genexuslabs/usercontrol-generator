@@ -1,0 +1,7 @@
+{
+  "atom-workspace": {
+    "alt-shift-n": "usercontrol-generator:create",
+	 "alt-shift-d": "usercontrol-generator:deploy",
+	 "alt-shift-a": "usercontrol-generator:tags"
+  }
+}

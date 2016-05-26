@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Id",
+		"description": "Usercontrol Uniqe ID",
+		"version": "10.0.0",
+		"type": "GUID",
+		"interfaces": "web,ios,android"
+	},
+	{
+		"name": "Version",
+		"description": "Usercontrol version (xx.yy.zz)",
+		"version": "10.0.0",
+		"type": "string",
+		"interfaces": "web,ios,android"
+	},
+	{
+		"name": "ObjClass",
+		"description": "n/a",
+		"version": "10.0.0",
+		"type": "string",
+		"interfaces": "web,ios,android"
+	},
+	{
+		"name": "DataSourceAllowed",
+		"description": "n/a",
+		"version": "10.0.0",
+		"type": "string",
+		"interfaces": "web,ios,android"
+	},
+	{
+		"name": "Android_IsScrollable",
+		"description": "n/a",
+		"version": "10.3.0",
+		"type": "string",
+		"interfaces": "android"
+	},
+	{
+		"name": "DesignRender",
+		"description": "XSL to render the UC on Genexus",
+		"version": "10.0.0",
+		"type": "string",
+		"interfaces": "web,ios,android"
+	}
+]

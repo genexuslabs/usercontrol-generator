@@ -1,0 +1,25 @@
+{
+	"context-menu": {
+	  "atom-text-editor": []
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Genexus",
+          "submenu": [
+            {
+              "label": "Create User Control",
+              "command": "usercontrol-generator:create"
+			  },
+ 				{
+               "label": "XML Tag help",
+               "command": "usercontrol-generator:tags"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
