@@ -14,8 +14,15 @@
               "command": "usercontrol-generator:create"
 			  },
  				{
-               "label": "XML Tag help",
-               "command": "usercontrol-generator:tags"
+               "label": "Build",
+					"submenu": [
+					{
+						"label": "Debug"
+					},
+					{
+						"label": "Release"
+					}]
+
             }
           ]
         }
