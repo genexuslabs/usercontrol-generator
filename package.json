@@ -2,7 +2,7 @@
   "name": "genexus-usercontrol-generator",
   "main": "./lib/usercontrol-generator",
   "version": "1.0.0",
-  "description": "A short description of your package",
+  "description": "GeneXus Usercontrol Generator",
   "keywords": [
     "genexus",
     "usercontrol",
@@ -14,17 +14,18 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+    "ansi-to-html": "^0.4.1",
     "atom-space-pen-views": "^2.0.3",
     "fs-plus": "^2.8.2",
-    "gulp": "^3.9.1",
+    "graceful-fs": "^4.1.4",
     "node-uuid": "^1.4.7",
     "xml2js": "^0.4.16"
- },
- "providedServices": {
-  "autocomplete.provider": {
-    "versions": {
-      "2.0.0": "getProvider"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "getProvider"
+      }
     }
   }
- }
 }

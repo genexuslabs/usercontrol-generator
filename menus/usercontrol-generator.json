@@ -17,10 +17,12 @@
                "label": "Build",
 					"submenu": [
 					{
-						"label": "Debug"
+						"label": "Debug",
+						"command": "usercontrol-generator:build-debug"
 					},
 					{
-						"label": "Release"
+						"label": "Release",
+						"command": "usercontrol-generator:build-release"
 					}]
 
             }

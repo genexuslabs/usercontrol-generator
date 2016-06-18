@@ -12,6 +12,11 @@ By participating, you are expected to uphold this code. Please report unacceptab
 ### Prerequisites
 - [Atom](https://atom.io/)
 
+###
+1. Goto File/Settings/Install
+2. Search for "GeneXus Usercontrol Generator"
+3. Press Install button
+
 ## License
 
 Copyright (c) 2016 Genexus
