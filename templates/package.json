@@ -2,7 +2,6 @@
   "name": "gulp-template",
   "description": "Gulp default",
   "dependencies": {
-    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
     "gulp-clean": "^0.3.2",

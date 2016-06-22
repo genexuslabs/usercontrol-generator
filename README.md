@@ -1,21 +1,37 @@
 # usercontrol-generator package
 
-![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
+![A screenshot of your package](screen.gif)
 
 Genexus UserControl Generator is an Atom package that helps to create [User Controls](http://wiki.genexus.com/commwiki/servlet/wiki?5273,Category%3AUser+Controls) for GeneXus.
 
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior to jdiana@genexus.com.
 
+## Main Features
+With this package you get:
+
+* Usercontrol creation with main settings
+* .control files syntax highlighting
+* .control structure autocomplete
+* Gulp building script
+
 ## Installing
 
 ### Prerequisites
 - [Atom](https://atom.io/)
 
-###
+### Installation steps
 1. Goto File/Settings/Install
 2. Search for "GeneXus Usercontrol Generator"
 3. Press Install button
+
+## Usercontrol structure
+When you create a Usercontrol from this package, the below structure will be created:
+
+* \src : Usercontrol source files
+* \gulpfile.js : Gulp script for building (debug/release)
+* \build\debug : Default debug build
+* \build\release : Default release build
 
 ## License
 

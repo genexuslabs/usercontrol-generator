@@ -17,7 +17,6 @@
     "ansi-to-html": "^0.4.1",
     "atom-space-pen-views": "^2.0.3",
     "fs-plus": "^2.8.2",
-    "graceful-fs": "^4.1.4",
     "node-uuid": "^1.4.7",
     "xml2js": "^0.4.16"
   },

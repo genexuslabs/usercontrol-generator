@@ -7,6 +7,7 @@ function {UC.Name}($)
 	{
 		///UserCodeRegionStart:[show] (do not remove this comment.)
 
+		$(this.getContainerControl()).html('<h1>Hello world!</h1>');
 
 		///UserCodeRegionEnd: (do not remove this comment.)
 	}
