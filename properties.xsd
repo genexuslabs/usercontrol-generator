@@ -1,0 +1,55 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:group name="Property">
+		<xs:sequence>
+			<xs:element name="Id" type="xs:string" minOccurs='1' maxOccurs='1'>
+				<xs:annotation><xs:documentation>Property ID</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element name="Name" type="xs:string" minOccurs='1' maxOccurs='1'>
+				<xs:annotation><xs:documentation>Property Name</xs:documentation></xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="Group">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string" minOccurs='1' maxOccurs='1'>
+				<xs:annotation><xs:documentation>Group name</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element name="Type" type="xs:string" minOccurs='0'  maxOccurs='1'>
+				<xs:annotation><xs:documentation>Group type, example "Main"</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element name="Childs">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Prop">
+							<xs:complexType>
+								<xs:group ref="Property"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="Group">
+							<xs:complexType>
+								<xs:group ref="Group"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:element name="Content">
+		<xs:complexType>
+			<xs:sequence minOccurs="1" maxOccurs="1">
+				<xs:element name="Object">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Group">
+								<xs:complexType>
+									<xs:group ref="Group"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

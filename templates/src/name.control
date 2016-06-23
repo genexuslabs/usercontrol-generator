@@ -21,8 +21,7 @@
 	<BB_SupportFiles />
 	<ResizeSupported>{UC.Resize}</ResizeSupported>
 	<Platforms>
-		<Platform>{UC.Platform}</Platform>
-	</Platforms>
+{UC.Platform}	</Platforms>
 	<ReferencedFiles />
 	<iOS_ReferencedFiles />
 	<Android_ReferencedFiles />

@@ -6,12 +6,25 @@ var plumber = require('gulp-plumber');
 var uglify = require('gulp-uglify');
 var minifycss = require('gulp-minify-css');
 
+// Fill below var to update our testkb
+var myTestKB = ""; // C:/KBs/TestKb/CSharp/web/MyUC
+
 gulp.task('debug', function(cb) {
-	runSequence('clean', 'copyall');
+	runSequence('clean', ['copyall', 'copyalltest']);
 });
 
 gulp.task('release', function(cb) {
 	runSequence('clean', ['copypart','uglify','styles']);
+});
+
+// Update Test KB
+gulp.task('copyalltest', function() {
+	if (myTestKB!=""){
+   	gulp.src('src/**/*')
+   	.pipe(gulp.dest(myTestKB));
+	}else {
+		console.log("No TestKB defined");
+	}
 });
 
 gulp.task('clean', function() {

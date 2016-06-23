@@ -37,6 +37,7 @@
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element name="Platform">
+								<xs:annotation><xs:documentation>Allowed platforms</xs:documentation></xs:annotation>
 								<xs:simpleType>
 									<xs:restriction base="xs:string">
 										<xs:enumeration value="SmartDevices"/>
