@@ -12,6 +12,7 @@ Table of Contents
   * [Main Features](#features)
   * [Requirements](#requirements)
   * [Installation](#install)
+  * [Using](#using)
   * [Generated Usercontrol structure](#structure)
   * [Architecture](#architecture)
   * [Contributing](#contributing)
@@ -33,7 +34,9 @@ With this package you get:
 2. Search for "GeneXus Usercontrol Generator"
 3. Press Install button
 
-## Generated Usercontrol structure
+## Using
+### Create a new usercontrol
+#### Generated Usercontrol structure
 When you create a Usercontrol from this package, the below structure will be created:
 
 * \src : Usercontrol source files
@@ -41,8 +44,33 @@ When you create a Usercontrol from this package, the below structure will be cre
 * \build\debug : Default debug build
 * \build\release : Default release build
 
-## Architecture
+### Build process
 
+
+## Architecture
+### Autocomplete
+Atom uses [Autocomplete plus](https://github.com/atom/autocomplete-plus) for this feature.
+
+Were write a specific autocomplete provider to add this feature in the control and properties file. You can check it on \lib\autocomplete\provider.js.
+
+### Usercontrol
+User control is a helper class that provides with some usercontrol features as creation, check is valid, read and write attributes an others.
+
+This class will be used mainly for creating and building a usercontrol.
+
+#### Creation
+usercontrol-create-view is UI responsible for creating the usercontrol.
+
+#### Build
+For build process, we decided for [gulp](http://gulpjs.com/) as it is write on javascript as atom.
+usercontrol-build-view is responsible for the UI and run the gulp script located on the usercontrol root path.
+
+#### Grammar association
+.control files are associated automatically to xml files using grammars. This happens on the usercontrol activation (usercontrol-generator.activate()).
+
+#### Others
+base-form is an abstract form helper to build our UI.
+utils have some useful functions.
 
 ## Contributing
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
