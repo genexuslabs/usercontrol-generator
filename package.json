@@ -2,7 +2,7 @@
   "name": "genexus-usercontrol-generator",
   "main": "./lib/usercontrol-generator",
   "version": "1.0.0",
-  "description": "GeneXus Usercontrol Generator",
+  "description": "Genexus UserControl Generator is an Atom package that helps to create User Controls for GeneXus",
   "keywords": [
     "genexus",
     "usercontrol",
