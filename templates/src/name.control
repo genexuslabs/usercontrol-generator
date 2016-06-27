@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<ObjClass>{UC.Name}</ObjClass>
    <Id>{UC.UUID}</Id>
    <Name>{UC.Name}</Name>
    <Description>{UC.Desc}</Description>
+	<ObjClass>{UC.Name}</ObjClass>
 	<Version>1.00.00</Version>
 	<RuntimeRender>{UC.Name}Render.js</RuntimeRender>
 	<PropertiesDefinition>{UC.Name}Properties.xml</PropertiesDefinition>
 	<DesignRender>{UC.Name}Render.xsl</DesignRender>
 	<ShowMethod>show</ShowMethod>
+	<ResizeSupported>{UC.Resize}</ResizeSupported>
 	<HeightPropertyName>Height</HeightPropertyName>
 	<WidthPropertyName>Width</WidthPropertyName>
 	<DataSourceAllowed>None</DataSourceAllowed>
@@ -19,7 +20,6 @@
 	<iOS_SupportFiles />
 	<Android_SupportFiles />
 	<BB_SupportFiles />
-	<ResizeSupported>{UC.Resize}</ResizeSupported>
 	<Platforms>
 {UC.Platform}	</Platforms>
 	<ReferencedFiles />

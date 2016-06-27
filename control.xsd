@@ -5,20 +5,50 @@
 				<xs:element name="Id" type="xs:string" minOccurs='1' maxOccurs='1'>
 					<xs:annotation><xs:documentation>Usercontrol Uniqe ID</xs:documentation></xs:annotation>
 				</xs:element>
-				<xs:element name="ObjClass" type="xs:string" minOccurs='1' maxOccurs='1'>
-					<xs:annotation><xs:documentation>Usercontrol Classname</xs:documentation></xs:annotation>
-				</xs:element>
-				<xs:element name="Version" type="xs:string" minOccurs='1' maxOccurs='1'>
-					<xs:annotation><xs:documentation>Usercontrol version (xx.yy.zz)</xs:documentation></xs:annotation>
-				</xs:element>
 				<xs:element name="Name" type="xs:string" minOccurs='1' maxOccurs='1'>
 					<xs:annotation><xs:documentation>Usercontrol Name</xs:documentation></xs:annotation>
 				</xs:element>
 				<xs:element name="Description" type="xs:string" minOccurs='1' maxOccurs='1'>
 					<xs:annotation><xs:documentation>Usercontrol Description</xs:documentation></xs:annotation>
 				</xs:element>
+				<xs:element name="ObjClass" type="xs:string" minOccurs='1' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Usercontrol Classname</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="Version" type="xs:string" minOccurs='1' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Usercontrol version (xx.yy.zz)</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="RuntimeRender" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Javascript file to render the UC</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="PropertiesDefinition" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Properties definition file</xs:documentation></xs:annotation>
+				</xs:element>
 				<xs:element name="DesignRender" type="xs:string" minOccurs='1' maxOccurs='1'>
 					<xs:annotation><xs:documentation>XSL to render the UC on Genexus</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="ShowMethod" type="xs:string" minOccurs='1' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Method to render the UC from RuntimeRender file</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="ResizeSupported" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>The UC can be resized?</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="HeightPropertyName" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>UC Height property for resize</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="WidthPropertyName" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>UC Width property for resize</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="DataSourceAllowed" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>DataSourceAllowed</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="CustomDataSources" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>CustomDataSources</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="AutoGrowSupported" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>AutoGrowSupported</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="IncludeInControlInfo" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>Can be selected as a object type? (like CKEditor)</xs:documentation></xs:annotation>
 				</xs:element>
 				<xs:element name="SupportFiles">
 					<xs:complexType>
@@ -31,7 +61,7 @@
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
-					<xs:annotation><xs:documentation>Support files</xs:documentation></xs:annotation>
+					<xs:annotation><xs:documentation>Web support files</xs:documentation></xs:annotation>
 				</xs:element>
 				<xs:element name="Platforms">
 					<xs:complexType>
@@ -48,6 +78,9 @@
 						</xs:sequence>
 					</xs:complexType>
 					<xs:annotation><xs:documentation>Supported platforms</xs:documentation></xs:annotation>
+				</xs:element>
+				<xs:element name="IsPublic" type="xs:string" minOccurs='0' maxOccurs='1'>
+					<xs:annotation><xs:documentation>IsPublic</xs:documentation></xs:annotation>
 				</xs:element>
 			</xs:sequence>
 		</xs:complexType>

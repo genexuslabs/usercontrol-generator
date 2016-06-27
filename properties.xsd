@@ -5,7 +5,42 @@
 				<xs:annotation><xs:documentation>Property ID</xs:documentation></xs:annotation>
 			</xs:element>
 			<xs:element name="Name" type="xs:string" minOccurs='1' maxOccurs='1'>
-				<xs:annotation><xs:documentation>Property Name</xs:documentation></xs:annotation>
+				<xs:annotation><xs:documentation>Property name</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element name="Description" type="xs:string" minOccurs='0' maxOccurs='1'>
+				<xs:annotation><xs:documentation>Property description</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element name="Type">
+				<xs:annotation><xs:documentation>Allowed platforms</xs:documentation></xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Text"/>
+						<xs:enumeration value="Integer"/>
+						<xs:enumeration value="Custom"/>
+						<xs:enumeration value="Combo"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Values">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Value" type="xs:string" minOccurs='0'>
+							<xs:annotation><xs:documentation>Combo value</xs:documentation></xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Metadata">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Value" type="xs:string" minOccurs='0'>
+							<xs:annotation><xs:documentation>Metadata Value</xs:documentation></xs:annotation>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Default" type="xs:string" minOccurs='0'>
+				<xs:annotation><xs:documentation>Default property value</xs:documentation></xs:annotation>
 			</xs:element>
 		</xs:sequence>
 	</xs:group>
@@ -17,7 +52,7 @@
 			<xs:element name="Type" type="xs:string" minOccurs='0'  maxOccurs='1'>
 				<xs:annotation><xs:documentation>Group type, example "Main"</xs:documentation></xs:annotation>
 			</xs:element>
-			<xs:element name="Childs">
+			<xs:element name="Children">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="Prop">

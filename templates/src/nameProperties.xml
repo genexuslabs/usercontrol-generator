@@ -4,7 +4,7 @@
     <Group>
       <Name>General</Name>
       <Type>Main</Type>
-      <Childs>
+      <Children>
         <Prop>
           <Id>Width</Id>
           <Name>Width</Name>
