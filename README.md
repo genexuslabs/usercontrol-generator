@@ -28,6 +28,7 @@ With this package you get:
 ## Requirements
 
 - [Atom](https://atom.io/)
+
 ## Installation
 1. Goto File/Settings/Install
 2. Search for "GeneXus Usercontrol Generator"
@@ -36,6 +37,7 @@ With this package you get:
 ## Using
 ### Create a new usercontrol
 Follow below steps to create a new usercontrol:
+
 1. Goto Packages/GeneXus/Crete User control
 2. Specify name, description, platform and other attributes and press enter
 3. New control project will be opened
@@ -64,7 +66,7 @@ Atom uses [Autocomplete plus](https://github.com/atom/autocomplete-plus) for thi
 Were write a specific autocomplete provider to add this feature in the control and properties file. You can check it on \lib\autocomplete\provider.js.
 
 ### Usercontrol
-User control is a helper class that provides with some usercontrol features as creation, check is valid, read and write attributes an others.
+usercontrol.js is a helper class that provides with some usercontrol features as creation, check is valid, read and write attributes an others.
 
 This class will be used mainly for creating and building a usercontrol.
 
