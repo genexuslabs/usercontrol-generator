@@ -3,7 +3,7 @@ usercontrol-generator package
 ![Downloads](https://img.shields.io/github/downloads/genexuslabs/usercontrol-generator/total.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Genexus UserControl Generator is an Atom package that helps to create [User Controls](http://wiki.genexus.com/commwiki/servlet/wiki?5273,Category%3AUser+Controls) for GeneXus.
+Genexus User Control Generator is an Atom package that helps to create [User Controls](http://wiki.genexus.com/commwiki/servlet/wiki?5273,Category%3AUser+Controls) for GeneXus.
 
 ![A screenshot of your package](screen.gif)
 
@@ -20,7 +20,7 @@ Table of Contents
 ## Main Features
 With this package you get:
 
-* Usercontrol creation with main settings
+* User Control creation with main settings
 * .control files syntax highlighting
 * .control structure autocomplete
 * Gulp building script
@@ -30,34 +30,34 @@ With this package you get:
 - [Atom](https://atom.io/)
 
 ## Installation
-1. Goto File/Settings/Install
+1. Go to File/Settings/Install
 2. Search for "GeneXus Usercontrol Generator"
 3. Press Install button
 
 ## Using
-### Create a new usercontrol
-Follow below steps to create a new usercontrol:
+### Create a new User Control
+Follow below steps to create a new User Control:
 
-1. Goto Packages/GeneXus/Crete User control
+1. Go to Packages/GeneXus/Create User control
 2. Specify name, description, platform and other attributes and press enter
-3. New control project will be opened
+3. A new User Control project is created
 
-#### Generated Usercontrol structure
-When you create a Usercontrol from this package, the below structure will be created:
+#### Project's structure is generated
+When you create a User Control from this package, the below structure will be created:
 
-* \src : Usercontrol source files
-* \gulpfile.js : Gulp script for building (debug/release)
-* \build\debug : Default debug build
-* \build\release : Default release build
+* \src: User Control source files
+* \gulpfile.js: Gulp script for building (debug/release)
+* \build\debug: Default debug build
+* \build\release: Default release build
 
 ### Build process
 This package uses gulp to build the user control.
 You can do a debug or release build by click on the option Packages/GeneXus/Build/[Debug or Release]
 
-You are free to modify your project gulp script by editing the gulpscript.js file.
+You are free to modify your project's gulp script by editing the gulpscript.js file.
 
-#### Updating your testing usercontrol KB
-You will find the myTestKB variable on the gulpscript file. Setting this variable, the user control will be updated in your KB when debug build run.
+#### Updating your testing User Control KB
+You will find the myTestKB variable on the gulpscript file. By setting this variable, the user control will be updated in your KB when you run a debug build.
 
 ## Architecture
 ### Autocomplete
@@ -65,20 +65,20 @@ Atom uses [Autocomplete plus](https://github.com/atom/autocomplete-plus) for thi
 
 Were write a specific autocomplete provider to add this feature in the control and properties file. You can check it on \lib\autocomplete\provider.js.
 
-### Usercontrol
-usercontrol.js is a helper class that provides with some usercontrol features as creation, check is valid, read and write attributes an others.
+### User Control
+usercontrol.js is a helper class that provides with some User Control features as creation, validation, read and write attributes and others.
 
-This class will be used mainly for creating and building a usercontrol.
+This class will be used mainly for creating and building a User Control.
 
 #### Creation
-usercontrol-create-view is UI responsible for creating the usercontrol.
+usercontrol-create-view is UI responsible for creating the User Control.
 
 #### Build
-For build process, we decided for [gulp](http://gulpjs.com/) as it is write on javascript as atom.
-usercontrol-build-view is responsible for the UI and run the gulp script located on the usercontrol root path.
+For build process, we decided for [gulp](http://gulpjs.com/) (it's on javascript too).
+"usercontrol-build-view" is responsible for the UI and run the gulp script located on the User Control root path.
 
 ### Grammar association
-.control files are associated automatically to xml files using [grammars](https://atom.io/docs/api/v1.8.0/Grammar). This happens on the usercontrol activation (usercontrol-generator.activate()).
+.control files are associated automatically to xml files using [grammars](https://atom.io/docs/api/v1.8.0/Grammar). This happens on the User Control activation (usercontrol-generator.activate()).
 
 ### Others
 base-form.js is an abstract form helper to build our UI.
@@ -88,6 +88,9 @@ utils.js is a class with some useful functions.
 ## Contributing
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior to jdiana@genexus.com.
+
+### Some standards
+[Writing a friendly readme](http://rowanmanning.com/posts/writing-a-friendly-readme/)
 
 ## License
 Copyright (c) 2016 Genexus
