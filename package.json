@@ -1,17 +1,21 @@
 {
+  "productName": "GeneXus Usercontrol Generator",
   "name": "genexus-usercontrol-generator",
   "main": "./lib/usercontrol-generator",
-  "version": "1.0.0",
+  "version": "0.8.0",
   "description": "Genexus UserControl Generator is an Atom package that helps to create User Controls for GeneXus",
   "keywords": [
     "genexus",
     "usercontrol",
     "extension"
   ],
-  "repository": "https://github.com/atom/usercontrol-generator",
+  "repository": "https://github.com/genexuslabs/usercontrol-generator",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/genexuslabs/usercontrol-generator/issues"
   },
   "dependencies": {
     "ansi-to-html": "^0.4.1",
