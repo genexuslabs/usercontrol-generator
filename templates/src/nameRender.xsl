@@ -31,7 +31,6 @@
     </span>
   </xsl:template>
 
-
   <!-- Helpers Templates -->
   <xsl:template name="AddStyleAttribute" >
     <xsl:variable name="Style">
