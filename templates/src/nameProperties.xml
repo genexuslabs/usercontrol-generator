@@ -1,23 +1,23 @@
 <?xml version="1.0"?>
 <Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Object id="{UC.Name}">
-    <Group>
-      <Name>General</Name>
-      <Type>Main</Type>
-      <Children>
-        <Prop>
-          <Id>Width</Id>
-          <Name>Width</Name>
-          <Type>Text</Type>
-          <Default>200</Default>
-        </Prop>
-        <Prop>
-          <Id>Height</Id>
-          <Name>Height</Name>
-          <Type>Text</Type>
-          <Default>86</Default>
-        </Prop>
-      </Childs>
-    </Group>
-  </Object>
+	<Object id="{UC.Name}">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>Width</Id>
+					<Name>Width</Name>
+					<Type>Text</Type>
+					<Default>200</Default>
+				</Prop>
+				<Prop>
+					<Id>Height</Id>
+					<Name>Height</Name>
+					<Type>Text</Type>
+					<Default>86</Default>
+				</Prop>
+			</Children>
+		</Group>
+	</Object>
 </Content>
