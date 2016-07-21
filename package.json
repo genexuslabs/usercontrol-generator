@@ -9,7 +9,10 @@
     "usercontrol",
     "extension"
   ],
-  "repository": "https://github.com/genexuslabs/usercontrol-generator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/genexuslabs/usercontrol-generator.git"
+  },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
@@ -18,10 +21,10 @@
     "url": "https://github.com/genexuslabs/usercontrol-generator/issues"
   },
   "dependencies": {
-    "ansi-to-html": "^0.4.1",
+    "ansi-to-html": "^0.3.0",
     "atom-space-pen-views": "^2.0.3",
     "fs-plus": "^2.8.2",
-    "node-uuid": "^1.4.7",
+    "uuid": "^2.0.1",
     "xml2js": "^0.4.16"
   },
   "providedServices": {
