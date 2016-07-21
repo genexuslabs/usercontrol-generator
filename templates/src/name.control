@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <ControlDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>{UC.UUID}</Id>
-  <Name>{UC.Name}</Name>
-  <Description>{UC.Desc}</Description>
-  <ObjClass>{UC.Name}</ObjClass>
-  <Version>1.00.00</Version>
+	<Id>{UC.UUID}</Id>
+	<Name>{UC.Name}</Name>
+	<Description>{UC.Desc}</Description>
+	<ObjClass>{UC.Name}</ObjClass>
+	<Version>1.00.00</Version>
 	<RuntimeRender>{UC.Name}Render.js</RuntimeRender>
 	<PropertiesDefinition>{UC.Name}Properties.xml</PropertiesDefinition>
 	<DesignRender>{UC.Name}Render.xsl</DesignRender>
@@ -21,8 +21,8 @@
 	<Android_SupportFiles />
 	<BB_SupportFiles />
 	<Platforms>
-    {UC.Platform}
-  </Platforms>
+{UC.Platform}
+	</Platforms>
 	<ReferencedFiles />
 	<iOS_ReferencedFiles />
 	<Android_ReferencedFiles />
