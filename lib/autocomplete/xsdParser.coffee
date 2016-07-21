@@ -225,7 +225,7 @@ module.exports =
     # Create a randome type name and parse the child.
     # Iterate to skip "annotation", etc. It should ignore all except one.
 	 # dmonza - change uuid -> node-uuid
-    randomName = require('node-uuid')()
+    randomName = require('uuid')()
     @parseType childNode, randomName for childNode in node.$$
     return randomName
 
