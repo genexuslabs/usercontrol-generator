@@ -5,18 +5,14 @@
 			<Name>General</Name>
 			<Type>Main</Type>
 			<Children>
+				<!--
 				<Prop>
-					<Id>Width</Id>
-					<Name>Width</Name>
+					<Id>Key</Id>
+					<Name>Key</Name>
 					<Type>Text</Type>
 					<Default>200</Default>
 				</Prop>
-				<Prop>
-					<Id>Height</Id>
-					<Name>Height</Name>
-					<Type>Text</Type>
-					<Default>86</Default>
-				</Prop>
+				-->
 			</Children>
 		</Group>
 	</Object>

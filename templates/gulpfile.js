@@ -1,3 +1,8 @@
+// Node
+var fs = require('fs');
+var path = require('path');
+
+// Gulp libraries
 var gulp = require('gulp');
 var util = require('gulp-util');
 var runSequence = require('run-sequence');
@@ -19,7 +24,7 @@ gulp.task('release', function(cb) {
 
 // Update Test KB
 gulp.task('copyalltest', function() {
-	if (myTestKB!=""){
+	if (isDirectorySync(myTestKB)){
    	gulp.src('src/**/*')
    	.pipe(gulp.dest(myTestKB));
 	}else {
@@ -63,3 +68,12 @@ gulp.task('styles', function(){
 	 .pipe(minifycss())
 	 .pipe(gulp.dest('build/'+util.env.target))
 });
+
+// ----------------------------------
+// Useful functions
+function isDirectorySync( path ){
+	if (fs.existsSync(path) ){
+		return fs.lstatSync(path).isDirectory();
+	}
+	return false;
+}

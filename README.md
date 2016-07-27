@@ -5,7 +5,7 @@ usercontrol-generator package
 
 Genexus User Control Generator is an Atom package that helps to create [User Controls](http://wiki.genexus.com/commwiki/servlet/wiki?5273,Category%3AUser+Controls) for GeneXus.
 
-![A screenshot of your package](https://github.com/genexuslabs/usercontrol-generator/blob/master/screen.gif)
+![A screenshot of your package](https://s3-sa-east-1.amazonaws.com/gprojexcache/public/screen.gif)
 
 Table of Contents
 -----------------
@@ -15,7 +15,8 @@ Table of Contents
   * [Using](#using)
   * [Architecture](#architecture)
   * [Contributing](#contributing)
-  * [License](#license)
+  * [Support](#support)
+  * [License](#license)  
 
 ## Main Features
 With this package you get:
@@ -99,6 +100,11 @@ By participating, you are expected to uphold this code. Please report unacceptab
 
 ### Some standards
 [Writing a friendly readme](http://rowanmanning.com/posts/writing-a-friendly-readme/)
+
+## Support
+For user controls related issues, pleas send a new question on [Stackoverflow](stackoverflow.com/tags/genexus) with GeneXus tag.
+
+For this package issues, please use github issue system.
 
 ## License
 Copyright (c) 2016 Genexus

@@ -9,9 +9,7 @@
 	<PropertiesDefinition>{UC.Name}Properties.xml</PropertiesDefinition>
 	<DesignRender>{UC.Name}Render.xsl</DesignRender>
 	<ShowMethod>show</ShowMethod>
-	<ResizeSupported>{UC.Resize}</ResizeSupported>
-	<HeightPropertyName>Height</HeightPropertyName>
-	<WidthPropertyName>Width</WidthPropertyName>
+	<ResizeSupported>false</ResizeSupported>
 	<DataSourceAllowed>None</DataSourceAllowed>
 	<CustomDataSources />
 	<AutoGrowSupported>false</AutoGrowSupported>
@@ -31,7 +29,7 @@
 		<Parameters />
 		<Name>{UC.Name}</Name>
 	</Constructor>
-	<ControlType />
+	<ControlType>{UC.Type}</ControlType>
 	<Categories />
 	<Events />
 	<Actions />
