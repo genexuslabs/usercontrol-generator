@@ -31,8 +31,75 @@
 	</Constructor>
 	<ControlType>{UC.Type}</ControlType>
 	<Categories />
-	<Events />
-	<Actions />
+	<Events>
+		<!-- <Event>EventName</Event> -->
+	</Events>
+	<Methods>
+		<!-- <Method>
+			<Name>MethodName</Name>
+			<Signature>SetMode( myMode: Modes, text: Character)</Signature>
+			<Parameters>
+				<Parameter>Modes</Parameter>
+				<Parameter>Character</Parameter>
+			</Parameters>
+		</Method> -->
+	</Methods>
+	<Actions>
+		<!-- Declare new variable
+		<Action>
+			<Order>0</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>Name</string>
+					</Key>
+					<Value>
+						<string>VariableName</string>
+					</Value>
+				</Property>
+				<Property>
+					<Key>
+						<string>ATTCUSTOMTYPE</string>
+					</Key>
+					<Value>
+						<string>Variable Type</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>VarDeclaration</ActionType>
+		</Action> -->
+		<!-- Se control property
+		<Action>
+			<Order>1</Order>
+			<ActionProperties>
+				<Property>
+					<Key>
+						<string>PropertyName</string>
+					</Key>
+					<Value>
+						<string>&amp;MyVariable</string>
+					</Value>
+				</Property>
+			</ActionProperties>
+			<Data />
+			<ActionType>SetPropertyToControl</ActionType>
+		</Action>
+		-->
+		<!-- Code Snippet
+		<Action>
+			<Order>2</Order>
+			<ActionProperties />
+			<Data>
+				// Events from gpxJSBuffer
+				Event Start
+					msg("Hello world!")
+				EndEvent
+			</Data>
+			<ActionType>CodeSnippet</ActionType>
+		</Action>
+		-->
+	</Actions>
 	<IsPublic>true</IsPublic>
 	<Android_IsScrollable>false</Android_IsScrollable>
 </ControlDefinition>
