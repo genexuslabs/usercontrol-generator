@@ -102,7 +102,7 @@ By participating, you are expected to uphold this code. Please report unacceptab
 [Writing a friendly readme](http://rowanmanning.com/posts/writing-a-friendly-readme/)
 
 ## Support
-For user controls related issues, pleas send a new question on [Stackoverflow](stackoverflow.com/tags/genexus) with GeneXus tag.
+For user controls related issues, please use http://stackoverflow.com/tags/genexus.
 
 For this package issues, please use github issue system.
 
