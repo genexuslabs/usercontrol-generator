@@ -68,6 +68,10 @@ You are free to modify your project's gulp script by editing the gulpscript.js f
 #### Updating your testing User Control KB
 You will find the myTestKB variable on the gulpscript file. By setting this variable, the user control will be updated in your KB when you run a debug build.
 
+Take care that you must specify the full path, for example:
+Windows: C:/users/johndoe/kbs/mykb/web/myuc
+Linux: /home/johndoe/mykb/web/myuc
+
 ## Architecture
 ### Autocomplete
 Atom uses [Autocomplete plus](https://github.com/atom/autocomplete-plus) for this feature.
