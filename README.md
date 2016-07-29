@@ -70,7 +70,7 @@ You will find the myTestKB variable on the gulpscript file. By setting this vari
 
 Take care that you must specify the full path, for example:
 Windows: C:/users/johndoe/kbs/mykb/web/myuc
-Linux: /home/johndoe/mykb/web/myuc
+Linux: /home/johndoe/usercontrols/targets/myuc
 
 ## Architecture
 ### Autocomplete
