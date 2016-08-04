@@ -111,6 +111,14 @@ For user controls related issues, please use http://stackoverflow.com/tags/genex
 
 For this package issues, please use github issue system.
 
+### Known issues
+In some versions of Windows, the UserControl folder can't be deleted.
+For more information, please check next links:
+
+https://github.com/nodejs/node-v0.x-archive/issues/6960#issuecomment-46704998
+
+https://news.slashdot.org/story/16/05/31/0012222/microsoft-removes-260-character-path-length-limit-in-windows-10-redstone
+
 ## License
 Copyright (c) 2016 Genexus
 
