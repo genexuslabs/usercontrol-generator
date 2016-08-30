@@ -65,13 +65,18 @@ You can do a debug or release build by click on the option Packages/GeneXus/Buil
 
 You are free to modify your project's gulp script by editing the gulpscript.js file.
 
-#### Updating your testing User Control KB
-You will find the myTestKB variable on the gulpscript file. By setting this variable, the user control will be updated in your KB when you run a debug build.
+On debug build you can update the Usercontrol in GeneXus and a test kb.
 
-Take care that you must specify the full path, for example:
+#### Config file - config.json
+You will found the file config.json on the Userconstrol base project path. In this file, you can set the next options:
 
-Windows: C:/users/johndoe/kbs/mykb/web/myuc
-Linux: /home/johndoe/usercontrols/targets/myuc
+* gxpath: Is the GeneXus path were the Usercontrol will be updated on debug build process.
+* gxtestkb: Is the web base path were you are testing the Usercontorl. By setting this variable, the user control will be updated in your KB when you run a debug build.
+
+Take care that you must specify base web path, for example:
+
+Windows: C:/users/johndoe/kbs/mykb/web
+Linux: /home/johndoe/usercontrols/targets
 
 ## Architecture
 ### Autocomplete
