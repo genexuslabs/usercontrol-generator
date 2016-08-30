@@ -1,0 +1,6 @@
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\bin\Release\elevate.exe.config
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\bin\Release\elevate.exe
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\bin\Release\elevate.pdb
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\obj\Release\elevate.exe
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\obj\Release\elevate.pdb
+D:\Develop\GenexusComponents\usercontrol-generator\helpers\elevate\elevate\obj\Release\elevate.csprojResolveAssemblyReference.cache
