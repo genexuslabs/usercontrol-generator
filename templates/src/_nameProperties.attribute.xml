@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Object id="{UC.Name}">
+		<Group>
+			<Name>General</Name>
+			<Type>Main</Type>
+			<Children>
+				<Prop>
+					<Id>AttID</Id>
+					<Name>Attribute</Name>
+					<Type>Custom</Type>
+					<CustomType>Artech.Genexus.Common.CustomTypes.ControlAttVarReference, Artech.Genexus.Common</CustomType>
+					<Metadata>
+						<Value name="FlagHideAttributes">False</Value>
+						<Value name="FlagSetValueMethod">SetAttribute</Value>
+						<Value name="FlagGetValueMethod">GetAttribute</Value>
+						<Value name="FlagScope">DesignTime</Value>
+						<Value name="FlagDataTypeFilter">character,varchar,longvarchar</Value>
+					</Metadata>
+				</Prop>
+				<!--
+				<Prop>
+					<Id>Key</Id>
+					<Name>Key</Name>
+					<Type>Text</Type>
+					<Default>200</Default>
+				</Prop>
+				-->
+			</Children>
+		</Group>
+	</Object>
+</Content>
