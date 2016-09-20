@@ -34,13 +34,13 @@ With this package you get:
 ### Windows
 1. Install & Run 'atom'
 1. Go to File/Settings/Install
-2. Search for "GeneXus Usercontrol Generator"
+2. Search for "genexus-usercontrol-generator"
 3. Press Install button
 
 ### macOS
 1. Install & Run 'atom'
 1. Go to Atom/Preferences/Install
-2. Search for "GeneXus Usercontrol Generator"
+2. Search for "genexus-usercontrol-generator"
 3. Press Install button
 
 ## Using
