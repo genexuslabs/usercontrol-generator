@@ -17,14 +17,12 @@
 	<SupportFiles />
 	<iOS_SupportFiles />
 	<Android_SupportFiles />
-	<BB_SupportFiles />
 	<Platforms>
 {UC.Platform}
 	</Platforms>
 	<ReferencedFiles />
 	<iOS_ReferencedFiles />
 	<Android_ReferencedFiles />
-	<BB_ReferencedFiles />
 	<Constructor>
 		<Parameters />
 		<Name>{UC.Name}</Name>
