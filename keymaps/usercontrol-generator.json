@@ -1,7 +1,7 @@
 {
   "atom-workspace": {
     "alt-shift-n": "usercontrol-generator:create",
-	 "alt-shift-d": "usercontrol-generator:build-debug",
-	 "alt-shift-r": "usercontrol-generator:build-release"
+    "alt-shift-d": "usercontrol-generator:build-debug",
+    "alt-shift-r": "usercontrol-generator:build-release"
   }
 }
